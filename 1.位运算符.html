@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //位运算符的本质是先把操作数转为二进制，然后运算，结果转为十进制
+        console.log('5&1:', (5 & 1));
+        //与
+        //转为二进制后，同一位置的两个 数，一个为0就是0，两个都为1才是1
+        console.log('5|1:', (5 | 1));
+        //或
+        //转为二进制后，同一位置的两个数，一个为1就是1，两个都为0才是0
+        console.log('~5:', (~5));
+        //非
+        // 对参与运算的数的各二进位按位求反(反转整个数)
+        console.log('5^1:', (5 ^ 1));
+        //异或
+        //转为二进制后，同一位置的两个数，相同为0，不同为1
+        console.log('5<<1:', (5 << 1));
+        //左移
+        //操作数1转为二进制，然后将其向左移动操作数2大小的位数，空置的位置补上0，然后将数据转为十进制
+        console.log('5>>1:', (5 >> 1));
+        //右移
+        //操作数1转为二进制，然后将其向右移动操作数2大小的位数，移除的数据舍弃，保留的数据转为十进制
+    </script>
+</body>
+
+</html>
